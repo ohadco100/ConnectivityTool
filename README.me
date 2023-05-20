@@ -10,3 +10,4 @@ To run the tool:
 
 What still needs improvement:
 1. Using a thread pool to operate several protocol handlers together (they do mainly IO and therefor we can save time by running multiple)
+2. Improve the persistency service "find" performance (cuurently filters all existing results). Can be improved by handling this in a Map rather than a JSON object
