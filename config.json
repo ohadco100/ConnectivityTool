@@ -10,12 +10,12 @@
         {
           "protocol": "http",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         },
         {
           "protocol": "https",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         }
       ]
     },
@@ -29,12 +29,12 @@
         {
           "protocol": "http",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         },
         {
           "protocol": "https",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         }
       ]
     },
@@ -48,12 +48,12 @@
         {
           "protocol": "http",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         },
         {
           "protocol": "https",
           "enabled": true,
-          "latencyThresholdInPercentage": 1000
+          "latencyThresholdInPercentage": 10
         }
       ]
     }
