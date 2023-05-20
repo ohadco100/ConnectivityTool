@@ -6,12 +6,12 @@ export class HttpProtocolHandler implements ProtocolHandler {
 
     protocol: string = 'http';
     async checkDomain(domain: string): Promise<TestResult> {
-        const testResult: TestResult = {date: new Date(), protocol: "", success: false, latencyDegradationFromPreviousRuns: false};
+        const testResult: TestResult = {date: new Date(), protocol: this.protocol, success: false, latencyDegradationFromPreviousRuns: false};
         const response = await axios.get(this.protocol +'://'+ domain, { responseType: 'arraybuffer' });
 
         //treating status code 300 till 400 as "good responses".
         testResult.success = response.status >= 200 && response.status < 400;
-        testResult.latency = measureLatency(domain);
+        testResult.latency = 1000;//measureLatency(domain);
         testResult.bandwidth = (response.data.length * 8) / testResult.latency / 1000; // Kilobits per second
         if (testResult.success) {
             console.log(`[${domain}] ${this.protocol.toUpperCase()} test completed. Latency: ${testResult.latency}ms, Bandwidth: ${testResult.bandwidth.toFixed(2)}Kbps`);
