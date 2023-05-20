@@ -11,7 +11,7 @@ export class HttpProtocolHandler implements ProtocolHandler {
 
         //treating status code 300 till 400 as "good responses".
         testResult.success = response.status >= 200 && response.status < 400;
-        testResult.latency = 1000;//measureLatency(domain);
+        testResult.latency = measureLatency(domain);
         testResult.bandwidth = (response.data.length * 8) / testResult.latency / 1000; // Kilobits per second
         if (testResult.success) {
             console.log(`[${domain}] ${this.protocol.toUpperCase()} test completed. Latency: ${testResult.latency}ms, Bandwidth: ${testResult.bandwidth.toFixed(2)}Kbps`);
@@ -28,7 +28,7 @@ export class HttpProtocolHandler implements ProtocolHandler {
             for(let i =0 ; i< previousResultsForProtocol.length; i++) {
                 const { latency: previousLatency = 0} = previousResultsForProtocol[i];
                 // @ts-ignore
-                const latencyDiff = Math.abs(latency - previousLatency);
+                const latencyDiff = Math.abs(testResult.latency - previousLatency);
 
                 if ((latencyDiff/previousLatency)*100 > latencyThresholdInPercentage) {
                     testResult.message = `[Warning: ${this.protocol.toUpperCase()} latency difference exceeded threshold.`
