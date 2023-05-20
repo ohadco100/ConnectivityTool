@@ -1,0 +1,168 @@
+{
+  "urls": [
+    {
+      "url": "ynet.co.il",
+      "results": [
+        {
+          "success": true,
+          "ipAddress": "104.70.125.117",
+          "protocol": "dns",
+          "date": "2023-05-18T21:30:01.498Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:02.464Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:03.238Z"
+        },
+        {
+          "success": true,
+          "ipAddress": "104.70.125.117",
+          "protocol": "dns",
+          "date": "2023-05-18T21:30:07.867Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:08.733Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:09.467Z"
+        },
+        {
+          "success": true,
+          "ipAddress": "104.70.125.117",
+          "protocol": "dns",
+          "date": "2023-05-18T21:30:17.302Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:18.220Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:30:19.028Z"
+        },
+        {
+          "success": true,
+          "ipAddress": "104.70.125.117",
+          "protocol": "dns",
+          "date": "2023-05-18T21:31:17.721Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:18.579Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:19.294Z"
+        },
+        {
+          "success": true,
+          "ipAddress": "104.70.125.117",
+          "protocol": "dns",
+          "date": "2023-05-18T21:31:29.944Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:30.974Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:31.704Z"
+        }
+      ]
+    },
+    {
+      "url": "walla.co.il",
+      "results": [
+        {
+          "success": true,
+          "ipAddress": "13.226.2.2",
+          "protocol": "dns",
+          "date": "2023-05-18T21:31:19.361Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:19.761Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:19.864Z"
+        },
+        {
+          "success": true,
+          "ipAddress": "13.226.2.2",
+          "protocol": "dns",
+          "date": "2023-05-18T21:31:31.707Z"
+        },
+        {
+          "success": true,
+          "protocol": "http",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:31.786Z"
+        },
+        {
+          "success": true,
+          "protocol": "https",
+          "latency": 0,
+          "bandwidth": null,
+          "latencyDegradationFromPreviousRuns": false,
+          "date": "2023-05-18T21:31:31.819Z"
+        }
+      ]
+    }
+  ]
+}

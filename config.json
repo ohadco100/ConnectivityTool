@@ -1,0 +1,47 @@
+{
+  "websites": [
+    {
+      "url": "ynet.co.il",
+      "tests": [
+        {
+          "protocol": "dns",
+          "enabled": true
+        },
+        {
+          "protocol": "http",
+          "enabled": true,
+          "latencyThreshold": 1000,
+          "bandwidthThreshold": 1024
+        },
+        {
+          "protocol": "https",
+          "enabled": true,
+          "latencyThreshold": 1000,
+          "bandwidthThreshold": 1024
+        }
+      ]
+    },
+    {
+      "url": "walla.co.il",
+      "tests": [
+        {
+          "protocol": "dns",
+          "enabled": true
+        },
+        {
+          "protocol": "http",
+          "enabled": true,
+          "latencyThreshold": 1000,
+          "bandwidthThreshold": 1024
+        },
+        {
+          "protocol": "https",
+          "enabled": true,
+          "latencyThreshold": 1000,
+          "bandwidthThreshold": 1024
+        }
+      ]
+    }
+  ],
+  "logFile": "test_results.log"
+}
