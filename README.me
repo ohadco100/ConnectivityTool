@@ -1,21 +1,12 @@
-To run the tool, you will need to follow these steps:
+To run the tool:
 
-1. Install Node.js and TypeScript: Make sure you have Node.js installed on your Unix machine. You can download it from the official Node.js website (https://nodejs.org). TypeScript can be installed globally by running the command `npm install -g typescript`.
+1. Install Node.js and TypeScript (npm install -g typescript)
 
-2. Set up the project: Create a new directory for your project and navigate to it in the terminal. Initialize a new Node.js project by running `npm init` and follow the prompts. Install the necessary dependencies by running `npm install axios @types/node dns`.
+2. Run the command `tsc` to compile the TypeScript code into JavaScript. This will generate a compiled `main.js` file in dist folder.
 
-3. Create the TypeScript files: Create a new file named `index.ts` and copy the code from the previous example into it.
+3. node dist/main.js
 
-4. Compile the TypeScript code: In the terminal, run the command `tsc` to compile the TypeScript code into JavaScript. This will generate a compiled `index.js` file.
 
-5. Run the tool: To run the tool, use the following command in the terminal:
 
-```bash
-node index.js --config <configFilePath> --log <logFilePath>
-```
-
-Replace `<configFilePath>` with the path to your configuration file (e.g., `config.json`) and `<logFilePath>` with the path to your log file (e.g., `log.txt`).
-
-Make sure to provide the correct paths to your configuration file and log file. The tool will read the configuration, perform the tests, and store the results in the log file.
-
-You can customize the code to add additional functionality or modify the behavior based on your specific requirements.
+What still needs improvement:
+1. Using a thread pool to operate several protocol handlers together (they do mainly IO and therefor we can save time by running multiple)

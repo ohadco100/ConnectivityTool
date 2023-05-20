@@ -1,24 +1,24 @@
 export interface Test {
     protocol: string;
     enabled: boolean;
-    latencyThreshold?: number;
-    bandwidthThreshold?: number;
+    latencyThresholdInPercentage?: number;
 }
 
-export interface Website {
+export interface URL {
     url: string;
     tests: Test[];
 }
 
 export interface Configuration {
-    websites: Website[];
+    urls: URL[];
     logFile: string;
 }
 
 export interface TestResult {
     date: Date;
-    protocol: string;
+    protocol?: string;
     success: boolean;
+    message?: string;
     ipAddress? : string;
     latency?: number;
     bandwidth?: number;
@@ -32,4 +32,12 @@ export interface TestResults {
 
 export interface AllResults {
     urls: TestResults[]
+}
+
+export interface ProtocolHandler {
+    protocol: string;
+
+    checkDomain: (domain: string) => Promise<TestResult>;
+
+    checkDegradationFromPreviousResults: (latencyThresholdInPercentage: number, previousResults: TestResult[] | undefined, testResult: TestResult) => Promise<void>
 }

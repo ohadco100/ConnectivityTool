@@ -1,28 +1,62 @@
-import {lookup} from "node:dns";
-import axios from "axios";
-import {TestResult, TestResults, Website} from "./types";
+import {ProtocolHandler, TestResult, URL} from "./types";
+import {execSync} from 'child_process';
+import {isValidDomain} from "./validation.service";
+import {ProtocolHandlerFactory} from "./protocolHandlers/protocolHandlerFactory";
 
-function resolveDNS(url: string): Promise<{dnsSuccess:boolean, dnsIpAddress: string}> {
-    return new Promise((resolve, reject) => {
-        // @ts-ignore
-        lookup(url, (err: NodeJS.ErrnoException, address: string, family: number) => {
-            if (err) resolve({dnsSuccess:false, dnsIpAddress:err.message});
-            else resolve({dnsSuccess:true, dnsIpAddress:address});
-        });
-    });
+export async function testConnectivity(website: URL, previousResults: TestResult[] | undefined): Promise<TestResult[]> {
+    const { url, tests } = website;
+    const results: TestResult[] = [];
+
+    if (!isValidDomain(url)){
+        const testResult : TestResult = {date: new Date(),success: false};
+        testResult.message = `Invalid domain supplied ${url}.Please check format`
+        console.error(testResult.message);
+        results.push(testResult);
+        return results;
+    }
+
+    for (const test of tests) {
+        const { protocol, enabled, latencyThresholdInPercentage = 0} = test;
+
+        if (enabled) {
+            try {
+                let testResult : TestResult = {date: new Date(), protocol: protocol, success: true};
+
+                if (!isValidDomain(url)){
+                    testResult.success = false;
+                    testResult.message = `Invalid domain supplied ${url}.Please check format`
+                    console.error(testResult.message);
+                    continue;
+                }
+
+                const protocolHandlerFactory :  ProtocolHandlerFactory = new ProtocolHandlerFactory();
+                try {
+                    const protocolHandler: ProtocolHandler = protocolHandlerFactory.createHandler(protocol);
+                    testResult = await protocolHandler.checkDomain(url);
+                    await protocolHandler.checkDegradationFromPreviousResults(latencyThresholdInPercentage,previousResults, testResult);
+                } catch (err: any){
+                    if (err.message === 'Invalid protocol') {
+                        testResult.success = false;
+                        testResult.message = `Unsupported protocol ${protocol}`
+                        console.error(testResult.message);
+                    } else {
+                        testResult.success = false;
+                        testResult.message = err.message;
+                        console.error(`Error for protocol ${protocol}. Error: ${testResult.message}`);
+                    }
+                }
+
+                results.push(testResult);
+            } catch (error) {
+                console.error(`[${url}] ${protocol.toUpperCase()} test failed:`, error);
+            }
+        }
+    }
+
+    return results;
 }
 
-async function testURL(url: string, protocol: string): Promise<{ success: boolean, latency: number; bandwidth: number }> {
-    const response = await axios.get(protocol +'://'+ url, { responseType: 'arraybuffer' });
-    const success = response.status == 200;
-    const latency = 0;//measureLatency(url);
-    const bandwidth = (response.data.length * 8) / latency / 1000; // Kilobits per second
-    return { success,latency, bandwidth };
-}
-
-import {exec, execSync} from 'child_process';
-
-function measureLatency(url: string): number {
+export function measureLatency(url: string): number {
     const command = process.platform === 'win32' ? `ping ${url}` : `ping -c 5 ${url}`;
     let latency: number = -1;
     const output = execSync(command).toString();
@@ -38,61 +72,4 @@ function measureLatency(url: string): number {
         console.error('Unable to parse latency from the ping output.');
     }
     return latency;
-}
-
-export async function testConnectivity(website: Website, previousResults: TestResult[] | undefined): Promise<TestResult[]> {
-    const { url, tests } = website;
-    const results: TestResult[] = [];
-
-    for (const test of tests) {
-        const { protocol, enabled, latencyThreshold = 0, bandwidthThreshold = 0 } = test;
-
-        if (enabled) {
-            try {
-                let latency = undefined;
-                let bandwidth = undefined;
-                let latencyDegradationFromPreviousRuns: boolean | undefined = undefined;
-                let success = true;
-                let ipAddress: string | undefined = undefined;
-
-                if (protocol === 'dns') {
-                    const {dnsSuccess, dnsIpAddress} = await resolveDNS(url);
-                    success = dnsSuccess;
-                    ipAddress = dnsIpAddress;
-                    if (dnsSuccess) {
-                        console.log(`[${url}] DNS resolved to: ${dnsIpAddress}`);
-                    } else {
-                        console.error(`ALERT: failed DNS resolving of ${url}`);
-                    }
-                } else if (protocol === 'http' || protocol === 'https') {
-                    latencyDegradationFromPreviousRuns = false;
-                    const { success: success, latency: testLatency, bandwidth: testBandwidth } = await testURL(url, protocol);
-                    latency = testLatency;
-                    bandwidth = testBandwidth;
-                    console.log(`[${url}] ${protocol.toUpperCase()} test completed. Latency: ${latency}ms, Bandwidth: ${bandwidth.toFixed(2)}Kbps`);
-                }
-
-                if (previousResults) {
-                    const previousResultsForProtocol: TestResult[] = previousResults.filter((result) => result.protocol === protocol);
-                    for(let i =0 ; i< previousResultsForProtocol.length; i++) {
-                        const { latency: previousLatency = 0} = previousResultsForProtocol[i];
-                        // @ts-ignore
-                        const latencyDiff = Math.abs(latency - previousLatency);
-
-                        if (latencyDiff > latencyThreshold) {
-                            console.error(`[${url}] ALERT: ${protocol.toUpperCase()} latency difference exceeded threshold.`);
-                            latencyDegradationFromPreviousRuns = true;
-                            break;
-                        }
-                    }
-                }
-
-                results.push({ success,ipAddress, protocol, latency, bandwidth, latencyDegradationFromPreviousRuns: latencyDegradationFromPreviousRuns, date: new Date() });
-            } catch (error) {
-                console.error(`[${url}] ${protocol.toUpperCase()} test failed:`, error);
-            }
-        }
-    }
-
-    return results;
 }
