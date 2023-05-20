@@ -1,14 +1,13 @@
 {
   "name": "connectivity-test-tool",
   "version": "1.0.0",
-  "description": "Command-line tool to test internet connectivity capabilities",
+  "description": "Command-line tool to test connectivity for domains",
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "Ohad Cohen",
   "dependencies": {
     "axios": "^0.24.0",
     "fs": ""
