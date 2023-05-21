@@ -1,0 +1,15 @@
+{
+  "logFile": "runs/j6xkh_test_results.json",
+  "urls": [
+    {
+      "url": "www.ynet.co.il",
+      "tests": [
+        {
+          "enabled": true,
+          "latencyThresholdInPercentage": 10,
+          "protocol": "http"
+        }
+      ]
+    }
+  ]
+}

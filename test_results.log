@@ -1,0 +1,641 @@
+{
+  "urls": [
+    {
+      "url": "ynet.co.il",
+      "results": [
+        {
+          "date": "2023-05-20T20:54:02.319Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-20T20:54:02.320Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 1000,
+          "bandwidth": 2.89704
+        },
+        {
+          "date": "2023-05-20T20:54:04.490Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 1000,
+          "bandwidth": 2.89704
+        },
+        {
+          "date": "2023-05-20T20:54:19.421Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-20T20:54:19.422Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 2000,
+          "bandwidth": 1.44852
+        },
+        {
+          "date": "2023-05-20T20:54:21.487Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 2000,
+          "bandwidth": 1.44852
+        },
+        {
+          "date": "2023-05-20T20:56:11.409Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "23.37.97.107"
+        },
+        {
+          "date": "2023-05-20T20:56:11.410Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3000,
+          "bandwidth": 0.96568,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-20T20:56:13.634Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3000,
+          "bandwidth": 0.96568,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:35:41.112Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:35:41.118Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.75927272727273,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:35:50.630Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.817142857142855,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:36:51.785Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:36:51.788Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.78312727272727,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:36:56.970Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.84057142857143,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:33.281Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:37:33.296Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.78312727272727,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:38.546Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.84057142857143,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:38:13.328Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:38:13.332Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.78312727272727,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:38:18.435Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.78312727272727,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:39:16.289Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:39:16.291Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.810428571428574,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:39:24.685Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.75243636363636,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:42:34.197Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:42:34.208Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.85671428571428,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:42:39.361Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.79956363636364,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:43:16.920Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:43:16.931Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.85671428571428,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:43:22.142Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 59,
+          "bandwidth": 49.21993220338983,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:44:10.273Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:44:10.275Z",
+          "protocol": "http",
+          "success": false,
+          "message": "Socket connection timeout"
+        },
+        {
+          "date": "2023-05-21T17:44:11.799Z",
+          "protocol": "https",
+          "success": false,
+          "message": "Socket connection timeout"
+        },
+        {
+          "date": "2023-05-21T17:50:22.772Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "104.70.125.117"
+        },
+        {
+          "date": "2023-05-21T17:50:22.774Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 56,
+          "bandwidth": 51.84171428571428,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:50:28.017Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 55,
+          "bandwidth": 52.784290909090906,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        }
+      ]
+    },
+    {
+      "url": "walla.co.il",
+      "results": [
+        {
+          "date": "2023-05-20T20:54:06.150Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.96"
+        },
+        {
+          "date": "2023-05-20T20:54:06.150Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 1000,
+          "bandwidth": 4.899528
+        },
+        {
+          "date": "2023-05-20T20:54:06.318Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 1000,
+          "bandwidth": 4.899528
+        },
+        {
+          "date": "2023-05-20T20:54:23.213Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.96"
+        },
+        {
+          "date": "2023-05-20T20:54:23.214Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 2000,
+          "bandwidth": 2.449764
+        },
+        {
+          "date": "2023-05-20T20:54:23.295Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": false,
+          "latency": 2000,
+          "bandwidth": 2.449764
+        },
+        {
+          "date": "2023-05-20T20:56:15.647Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.79"
+        },
+        {
+          "date": "2023-05-20T20:56:15.647Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3000,
+          "bandwidth": 1.632432,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-20T20:56:16.074Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3000,
+          "bandwidth": 1.632432,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:36:05.283Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.96"
+        },
+        {
+          "date": "2023-05-21T17:36:05.287Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 986.4096,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:36:09.654Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 986.4096,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:05.169Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.79"
+        },
+        {
+          "date": "2023-05-21T17:37:05.174Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3,
+          "bandwidth": 1644.408,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:08.529Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 986.6448,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:43.436Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.79"
+        },
+        {
+          "date": "2023-05-21T17:37:43.438Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 3,
+          "bandwidth": 1644.5466666666669,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:37:46.850Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1233.41,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:38:26.553Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.79"
+        },
+        {
+          "date": "2023-05-21T17:38:26.555Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1231.33,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:38:29.916Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1231.33,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:39:29.524Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.79"
+        },
+        {
+          "date": "2023-05-21T17:39:29.525Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 6,
+          "bandwidth": 821.0386666666666,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:39:32.907Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1231.558,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:42:44.339Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.96"
+        },
+        {
+          "date": "2023-05-21T17:42:44.341Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 8,
+          "bandwidth": 616.611,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:42:47.751Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1233.222,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:43:26.948Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.15"
+        },
+        {
+          "date": "2023-05-21T17:43:26.949Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 978.7968000000001,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:43:30.220Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 978.7968000000001,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:44:12.766Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.15"
+        },
+        {
+          "date": "2023-05-21T17:44:12.769Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 978.1184000000001,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:44:16.258Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 978.1184000000001,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:50:36.037Z",
+          "protocol": "dns",
+          "success": true,
+          "ipAddress": "13.226.2.2"
+        },
+        {
+          "date": "2023-05-21T17:50:36.038Z",
+          "protocol": "http",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 5,
+          "bandwidth": 985.512,
+          "message": "[Warning: HTTP latency difference exceeded threshold."
+        },
+        {
+          "date": "2023-05-21T17:50:39.335Z",
+          "protocol": "https",
+          "success": true,
+          "latencyDegradationFromPreviousRuns": true,
+          "latency": 4,
+          "bandwidth": 1231.89,
+          "message": "[Warning: HTTPS latency difference exceeded threshold."
+        }
+      ]
+    },
+    {
+      "url": "?????",
+      "results": [
+        {
+          "date": "2023-05-20T20:54:06.350Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-20T20:54:23.331Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-20T20:56:16.113Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:36:14.078Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:37:11.644Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:37:49.989Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:38:33.052Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:39:36.045Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:42:50.895Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:43:33.324Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:44:19.375Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        },
+        {
+          "date": "2023-05-21T17:50:42.468Z",
+          "success": false,
+          "message": "Invalid domain supplied ?????.Please check format"
+        }
+      ]
+    }
+  ]
+}

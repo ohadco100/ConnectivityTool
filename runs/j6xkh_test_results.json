@@ -1,0 +1,15 @@
+{
+  "urls": [
+    {
+      "url": "www.ynet.co.il",
+      "results": [
+        {
+          "date": "2023-05-21T17:44:10.244Z",
+          "protocol": "http",
+          "success": false,
+          "message": "Socket connection timeout"
+        }
+      ]
+    }
+  ]
+}
